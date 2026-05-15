@@ -1,20 +1,20 @@
-# AWS Static Website Hosting 🌐
+# AWS Static Website Hosting 
 
 Hosted a personal portfolio website using **Amazon S3 Static Website Hosting**.
 
-## 🛠️ Services Used
+##  Services Used
 - Amazon S3
 - IAM (Bucket Policy)
 
-## ✨ Features
+##  Features
 - Public website hosting via S3
 - Custom HTML & CSS portfolio
 - Responsive design
 
-## 🔗 Live Project URL
+##  Live Project URL
 http://dhanasri-cloud-portfolio.s3-website.ap-south-1.amazonaws.com
 
-## 📁 Project Structure
+##  Project Structure
 ```
 aws-static-website-hosting/
 ├── index.html
@@ -27,8 +27,5 @@ aws-static-website-hosting/
     └── live-website.png
 ```
 
-## 📸 Screenshots
-*(Add your screenshots in the screenshots/ folder)*
-
-## 📝 Resume Bullet
+##  Resume Bullet
 > Designed and hosted a personal portfolio website using Amazon S3 Static Website Hosting with custom HTML/CSS and public access configuration.
