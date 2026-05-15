@@ -12,8 +12,7 @@ Hosted a personal portfolio website using **Amazon S3 Static Website Hosting**.
 - Responsive design
 
 ## 🔗 Live Project URL
-<!-- Paste your S3 website endpoint URL here after deploying -->
-`http://your-bucket-name.s3-website-your-region.amazonaws.com`
+http://dhanasri-cloud-portfolio.s3-website.ap-south-1.amazonaws.com
 
 ## 📁 Project Structure
 ```
