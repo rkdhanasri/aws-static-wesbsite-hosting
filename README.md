@@ -1,2 +1,35 @@
-# aws-static-wesbsite-hosting
-Personal portfolio hosted on AWS S3
+# AWS Static Website Hosting 🌐
+
+Hosted a personal portfolio website using **Amazon S3 Static Website Hosting**.
+
+## 🛠️ Services Used
+- Amazon S3
+- IAM (Bucket Policy)
+
+## ✨ Features
+- Public website hosting via S3
+- Custom HTML & CSS portfolio
+- Responsive design
+
+## 🔗 Live Project URL
+<!-- Paste your S3 website endpoint URL here after deploying -->
+`http://your-bucket-name.s3-website-your-region.amazonaws.com`
+
+## 📁 Project Structure
+```
+aws-static-website-hosting/
+├── index.html
+├── style.css
+├── README.md
+└── screenshots/
+    ├── s3-bucket.png
+    ├── static-hosting-settings.png
+    ├── bucket-policy.png
+    └── live-website.png
+```
+
+## 📸 Screenshots
+*(Add your screenshots in the screenshots/ folder)*
+
+## 📝 Resume Bullet
+> Designed and hosted a personal portfolio website using Amazon S3 Static Website Hosting with custom HTML/CSS and public access configuration.

@@ -1,0 +1,248 @@
+/* ===== RESET & BASE ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+  background: #0d0f1a;
+  color: #e8eaf6;
+  min-height: 100vh;
+  line-height: 1.7;
+}
+
+a {
+  color: #ff9900;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #ffb84d;
+  text-decoration: underline;
+}
+
+/* ===== HEADER ===== */
+header {
+  position: relative;
+  text-align: center;
+  padding: 80px 20px 60px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0d0f1a 0%, #131a2e 60%, #1a1f35 100%);
+  border-bottom: 1px solid rgba(255, 153, 0, 0.2);
+}
+
+.header-glow {
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 300px;
+  background: radial-gradient(ellipse, rgba(255, 153, 0, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.header-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(255, 153, 0, 0.12);
+  border: 1px solid rgba(255, 153, 0, 0.35);
+  color: #ff9900;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 22px;
+  text-transform: uppercase;
+}
+
+header h1 {
+  font-family: 'Sora', sans-serif;
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -1px;
+  margin-bottom: 8px;
+}
+
+.tagline {
+  font-size: 1.15rem;
+  color: #ff9900;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin-bottom: 12px;
+}
+
+.intro {
+  font-size: 0.95rem;
+  color: #8892b0;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+/* ===== MAIN ===== */
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 50px 20px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: #131929;
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 14px;
+  padding: 30px 34px;
+  transition: border-color 0.25s, transform 0.25s;
+}
+
+.card:hover {
+  border-color: rgba(255, 153, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.card h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ccd6f6;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 1.1rem;
+}
+
+/* ===== SKILLS TAGS ===== */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  background: rgba(255, 153, 0, 0.1);
+  border: 1px solid rgba(255, 153, 0, 0.3);
+  color: #ff9900;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8rem;
+  padding: 6px 14px;
+  border-radius: 6px;
+  letter-spacing: 0.04em;
+}
+
+/* ===== CERTIFICATIONS ===== */
+.cert-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cert-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #e8eaf6;
+}
+
+.cert-status {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  padding: 4px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.cert-status.pursuing {
+  background: rgba(100, 200, 255, 0.1);
+  border: 1px solid rgba(100, 200, 255, 0.3);
+  color: #64c8ff;
+}
+
+/* ===== PROJECTS ===== */
+.project-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.project-desc {
+  font-size: 0.9rem;
+  color: #8892b0;
+  line-height: 1.65;
+}
+
+.tech-used {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.tech {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #a8b2d8;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+
+/* ===== CONTACT ===== */
+.contact-line {
+  font-size: 0.95rem;
+  color: #a8b2d8;
+  margin-bottom: 8px;
+}
+
+.contact-line:last-child {
+  margin-bottom: 0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 24px 20px 36px;
+  font-size: 0.82rem;
+  color: #3d4a6b;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+footer strong {
+  color: #ff9900;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 560px) {
+  .card {
+    padding: 22px 20px;
+  }
+
+  header {
+    padding: 60px 16px 50px;
+  }
+}
